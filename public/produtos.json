@@ -5,7 +5,7 @@
     "descricao": "Notebook 15 polegadas, Intel Core i5, 8GB RAM, SSD 256GB",
     "preco": 2999.9,
     "categoria": "Informática",
-    "imagem": "https://via.placeholder.com/300x200?text=Notebook"
+    "imagem": "/images/notebook.svg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "descricao": "Tela AMOLED 6.5, 128GB, câmera tripla",
     "preco": 1899.0,
     "categoria": "Celulares",
-    "imagem": "https://via.placeholder.com/300x200?text=Smartphone"
+    "imagem": "/images/smartphone.svg"
   },
   {
     "id": 3,
