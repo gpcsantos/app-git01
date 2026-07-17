@@ -33,13 +33,12 @@ function Produtos() {
   }
 
   return (
-    <div className="p-6 space-y-4">
-      <h1 className="text-3xl font-bold">Produtos</h1>
+    <div className="w-full max-w-4xl mx-auto p-6 space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         {produtos.map((produto) => (
           <article
             key={produto.id}
-            className="rounded-xl border border-slate-200 p-4 shadow-sm hover:shadow-lg transition-shadow"
+            className="rounded-xl border border-slate-600 bg-slate-800 p-4 shadow-sm hover:shadow-lg transition-shadow"
           >
             <img
               src={produto.imagem}
@@ -47,9 +46,9 @@ function Produtos() {
               className="w-full rounded-lg object-cover h-44"
             />
             <div className="mt-4">
-              <h2 className="text-xl font-semibold">{produto.nome}</h2>
-              <p className="text-sm text-slate-600 mt-2">{produto.descricao}</p>
-              <p className="mt-4 text-lg font-bold text-slate-900">
+              <h2 className="text-xl font-semibold text-white">{produto.nome}</h2>
+              <p className="text-sm text-slate-300 mt-2">{produto.descricao}</p>
+              <p className="mt-4 text-lg font-bold text-cyan-300">
                 R$ {produto.preco.toFixed(2).replace('.', ',')}
               </p>
               <span className="inline-block mt-2 rounded-full bg-cyan-100 px-3 py-1 text-sm text-cyan-800">
