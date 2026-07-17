@@ -1,14 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function HomePage() {
     return (
         <div className="p-6 text-center font-sans">
-
 
             <div className="p-5 bg-cyan-950 text-white text-center rounded-md">
                 Compre agora seus produtos favoritos e aproveite as melhores ofertas!
             </div>
 
             <h2 className="text-xl font-bold my-6">Nossos Produtos</h2>
-
 
             <div className="max-w-md mx-auto space-y-4">
 
@@ -40,10 +40,14 @@ export default function HomePage() {
                 </div>
 
             </div>
+
             <div>
-                <button className="mt-5 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-cyan-900 cursor-pointer">
-                    Veja mais clicando aqui!
-                </button>
+                {/* Envolvemos o botão com o componente Link */}
+                <Link to="/produtos">
+                    <button className="mt-5 bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 cursor-pointer">
+                        Veja mais clicando aqui!
+                    </button>
+                </Link>
             </div>
         </div>
     );
