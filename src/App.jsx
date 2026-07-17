@@ -1,5 +1,7 @@
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import HomePage from "./Components/HomePage"
+import "./index.css";
 function App() {
   return (
     <>
@@ -8,8 +10,7 @@ function App() {
         <h1 className="text-2xl font-bold">Projeto BASE</h1>
       </div>
       <Footer />
+      <HomePage />
     </>
-  );
+  )
 }
-
-export default App;
