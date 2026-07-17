@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProductsPage from "../../Pages/ProductsPage";
 
 function Header() {
   return (
