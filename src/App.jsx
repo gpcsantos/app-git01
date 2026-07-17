@@ -1,4 +1,5 @@
 import HomePage from "./Components/HomePage"
+import "./index.css";
 function App() {
   return (
     <>
@@ -7,7 +8,5 @@ function App() {
       </div>
       <HomePage />
     </>
-  );
+  )
 }
-
-export default App;
