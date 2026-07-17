@@ -1,30 +1,30 @@
-
 import { Link } from "react-router-dom";
 
 function Header() {
-    return (
-        <header className="w-full bg-gray-950 text-gray-100 fixed top-0 shadow-lg">
-            {/* Usamos grid com 3 colunas e alinhamento central */}
-            <div className="w-full xl:w-7xl py-4 mx-auto grid grid-cols-3 items-center px-4">
-                
-                {/* Coluna 1: Botão do menu (esquerda) */}
-                <div className="md:hidden justify-self-start">
-                    <button id="menu-toggle">
-                        <i className="bi bi-list text-3xl"></i>
-                    </button>
-                </div>
+  return (
+    <header className="w-full bg-gray-950 text-gray-100 fixed top-0 left-0 shadow-lg z-50">
+      <div className="w-full py-4 px-4 flex items-center justify-between relative">
+        
+        {/* Esquerda: Botão do menu mobile */}
+        <div className="md:hidden z-10">
+          <button id="menu-toggle" className="cursor-pointer">
+            <i className="bi bi-list text-3xl"></i>
+          </button>
+        </div>
 
-                {/* Coluna 2: Título centralizado (ocupando a coluna do meio) */}
-                <div className="text-2xl font-bold col-start-2 justify-self-center text-center">
-                    Header
-                </div>
+        {/* Centro: Título perfeitamente centralizado na barra */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <h1 className="text-2xl font-bold pointer-events-auto">
+            Header
+          </h1>
+        </div>
 
-                {/* Coluna 3: Espaço reservado para manter o equilíbrio visual */}
-                <div className="col-start-3"></div>
+        {/* Direita: Elemento vazio para equilibrar a visualização */}
+        <div className="w-8"></div>
 
-            </div>
-        </header>
-    );
+      </div>
+    </header>
+  );
 }
 
 export default Header;
