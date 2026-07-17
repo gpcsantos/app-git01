@@ -4,6 +4,13 @@ import HomePage from "./Components/HomePage"
 import "./index.css";
 function App() {
   return (
+    <div className="home">
+      <h1>Home</h1>
+    </div>
+  );
+}
+
+export default App;
     <>
       <Header />
       <div className="p-5 bg-cyan-950 text-gray-200 flex justify-center ">
